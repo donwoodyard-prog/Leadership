@@ -1,0 +1,48 @@
+{
+  "name": "EMS Leadership Companion Guide",
+  "short_name": "EMS Leadership",
+  "description": "Comprehensive EMS Leadership guide covering visionary leadership, crisis management, technology integration, and evidence-based decision-making",
+  "start_url": "ems-leadership-guide-enhanced.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "medical", "business"],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search Guide",
+      "short_name": "Search",
+      "description": "Search the leadership guide",
+      "url": "ems-leadership-guide-enhanced.html#search",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Books & Resources",
+      "short_name": "Resources",
+      "description": "View books and training resources",
+      "url": "ems-leadership-guide-enhanced.html#resources",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
