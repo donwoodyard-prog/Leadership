@@ -2,7 +2,7 @@
   "name": "EMS Leadership Companion Guide",
   "short_name": "EMS Leadership",
   "description": "Comprehensive EMS Leadership guide covering visionary leadership, crisis management, technology integration, and evidence-based decision-making",
-  "start_url": "ems-leadership-guide-enhanced.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1e40af",
