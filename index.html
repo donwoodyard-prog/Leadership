@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Comprehensive EMS Leadership guide covering visionary leadership, crisis management, technology integration, and evidence-based decision-making for emergency medical services professionals.">
-    <meta name="theme-color" content="#1e40af">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="EMS Leadership">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="icon-192.png">
     <title>EMS Leadership Companion Guide | Quick Reference</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -42,8 +36,6 @@
             background: linear-gradient(to bottom right, var(--bg-gradient-from), var(--bg-gradient-to));
             color: var(--text-primary);
             transition: background-color 0.3s ease, color 0.3s ease;
-            -webkit-overflow-scrolling: touch;
-            touch-action: pan-y pinch-zoom;
         }
         
         /* Progress Bar */
@@ -173,12 +165,10 @@
             overflow-y: auto;
             padding: 20px;
             animation: slideInLeft 0.3s ease;
-            pointer-events: none;
         }
         
         #mobile-menu.show {
             display: block;
-            pointer-events: auto;
         }
         
         @keyframes slideInLeft {
@@ -495,8 +485,11 @@
             <a href="#advocacy" class="px-3 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
                 Advocacy
             </a>
-            <a href="#investigations" class="px-3 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
+            <a href="#investigations-preparedness" class="px-3 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
                 Investigations
+            </a>
+            <a href="#conducting-investigations" class="px-3 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
+                Conducting Investigations
             </a>
 
             <!-- Frameworks -->
@@ -520,11 +513,6 @@
             </a>
             <a href="#glossary" class="px-3 py-2 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition">
                 Glossary
-            </a>
-            
-            <!-- Resources -->
-            <a href="#resources" class="px-3 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:from-purple-700 hover:to-pink-700 transition font-semibold">
-                📚 Resources
             </a>
         </div>
     </div>
@@ -555,7 +543,6 @@
         <a href="#action-planning" class="block px-4 py-3 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition">✅ Action Planning</a>
         <a href="#blueprint" class="block px-4 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition">📋 Blueprint</a>
         <a href="#glossary" class="block px-4 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition">📖 Glossary</a>
-        <a href="#resources" class="block px-4 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition font-semibold">📚 Books & Resources</a>
     </div>
 </div>
 
@@ -3382,7 +3369,7 @@
                     <div class="flex items-start gap-2">
                         <span class="text-green-600 font-bold">4.</span>
                         <div>
-                            <strong>Build legislative champions:</strong> Identify sympathetic legislators and educate them on EMS issues—they'll carry your message forward.</strong>
+                            <strong>Build legislative champions:</strong> Identify sympathetic legislators and educate them on EMS issues—they'll carry your message forward.
                         </div>
                     </div>
                     <div class="flex items-start gap-2">
@@ -3423,7 +3410,7 @@
     </div>
 </section>
 <!-- Section: Regulatory Investigations & Preparedness -->
-<section id="investigations" class="mb-12">
+<section id="investigations-preparedness" class="mb-12">
     <div class="section-card bg-white rounded-xl shadow-lg overflow-hidden">
         <div class="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white">
             <div class="flex items-center gap-4">
@@ -3438,154 +3425,1190 @@
         <div class="p-8">
             <!-- Why this matters -->
             <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-8">
-                <h4 class="font-bold text-lg text-red-900 mb-4">Why This Matters for EMS Leaders</h4>
-                <p class="text-gray-700 text-sm mb-2">
+                <h3 class="font-bold text-xl text-red-900 mb-4">Why This Matters for EMS Leaders</h3>
+                <p class="text-gray-700 mb-3">
                     Regulatory investigations can happen to any agency, even high-performing ones. Your goal as a leader is not to fear investigations, but to be prepared for them and to build systems that demonstrate professionalism, transparency, and continuous improvement.
                 </p>
-                <p class="text-gray-700 text-sm">
+                <p class="text-gray-700">
                     Complaint reviews, licensing actions, and investigations are part of being a regulated healthcare profession. How you prepare, document, and respond says a lot about your leadership and your culture.
                 </p>
             </div>
 
-            <div class="space-y-6 text-sm text-gray-700">
-                <!-- Triggers -->
-                <div>
-                    <strong class="text-red-900">What Triggers Investigations:</strong>
-                    <ul class="ml-4 mt-1 space-y-1">
-                        <li>• Complaints from patients, families, staff, or partner agencies</li>
-                        <li>• Adverse events, sentinel incidents, or unexpected deaths</li>
-                        <li>• Routine compliance audits and site visits</li>
-                        <li>• Media reports, social media incidents, or public attention</li>
+            <!-- What Triggers -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-red-900 mb-4">What Can Trigger Investigations</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Complaints from patients, families, staff, or partner agencies</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Adverse events, sentinel incidents, or unexpected deaths</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Routine compliance audits and site visits</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Media reports, social media incidents, or public attention</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Documentation best practices -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-red-900 mb-4">Documentation Best Practices</h3>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span><strong>Document like you'll be investigated</strong>—because you might be</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span>Accurate, contemporaneous EMS reports are your best defense</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span>Maintain clear policies and demonstrate that they are actually followed</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span>Track corrective actions and quality improvement efforts, not just errors</span>
+                        </li>
                     </ul>
                 </div>
-                
-                <!-- Rights & responsibilities -->
-                <div>
-                    <strong class="text-red-900">Your Rights and Responsibilities:</strong>
-                    <ul class="ml-4 mt-1 space-y-1">
-                        <li>• Cooperate professionally, not defensively</li>
-                        <li>• You have the right to understand the scope and basis of the investigation</li>
-                        <li>• Know when to engage legal counsel or risk management (earlier is better)</li>
-                        <li>• Designate a single point of contact for investigators to prevent mixed messages</li>
-                    </ul>
-                </div>
-                
-                <!-- Documentation best practices -->
-                <div>
-                    <strong class="text-red-900">Documentation Best Practices:</strong>
-                    <ul class="ml-4 mt-1 space-y-1">
-                        <li>• <strong>Document like you'll be investigated</strong>—because you might be</li>
-                        <li>• Accurate, contemporaneous EMS reports are your best defense</li>
-                        <li>• Maintain clear policies and demonstrate that they are actually followed</li>
-                        <li>• Track corrective actions and quality improvement efforts, not just errors</li>
-                    </ul>
-                </div>
+            </div>
 
-                <!-- Being recorded / over-verbalizing -->
-                <div class="bg-red-50 border-l-4 border-red-500 p-5 rounded-r-lg">
-                    <strong class="text-red-900 block mb-2">Assume You Are Being Recorded</strong>
-                    <p class="mb-2">
+            <!-- Being recorded / over-verbalizing -->
+            <div class="mb-8">
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-red-900 mb-4">Assume You Are Being Recorded</h3>
+                    <p class="text-gray-700 mb-4">
                         Modern EMS practice happens in a world of cell phone cameras, doorbell cameras, in-car video, and body-worn devices. EMS clinicians should <strong>assume they are being audio and video recorded on every call</strong>, because they probably are.
                     </p>
-                    <ul class="ml-4 mt-1 space-y-1">
-                        <li>• Over-verbalize your assessment, differential, and decision-making for the camera and the microphone.</li>
-                        <li>• Especially on high-risk or high-stress scenes, <strong>say out loud</strong> what you are seeing, what you are doing, and why.</li>
-                        <li>• Use professional, calm language that would make sense later to a family member, investigator, or jury.</li>
-                        <li>• Remember: silent good care looks bad on video; narrated good care is understandable and defensible.</li>
-                    </ul>
-                    <p class="mt-2 text-xs text-gray-600 italic">
-                        If an attorney or regulator later reviews footage, your spoken assessment and rationale can be the difference between “reckless” and “reasonable under the circumstances.”
-                    </p>
+                    <div class="bg-white p-6 rounded-lg mb-4">
+                        <h4 class="font-bold text-gray-900 mb-3">Key Practices</h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Over-verbalize your assessment, differential, and decision-making for the camera and the microphone</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Especially on high-risk or high-stress scenes, <strong>say out loud</strong> what you are seeing, what you are doing, and why</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Use professional, calm language that would make sense later to a family member, investigator, or jury</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-600 font-bold text-xl">•</span>
+                                <span>Remember: silent good care looks bad on video; narrated good care is understandable and defensible</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                        <p class="text-sm text-gray-700 italic">
+                            <strong>Key Insight:</strong> If an attorney or regulator later reviews footage, your spoken assessment and rationale can be the difference between "reckless" and "reasonable under the circumstances."
+                        </p>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Leadership behavior -->
-                <div>
-                    <strong class="text-red-900">Leadership Behavior During an Investigation:</strong>
-                    <ul class="ml-4 mt-1 space-y-1">
-                        <li>• Communicate clearly with your crews about process and expectations</li>
-                        <li>• Avoid assigning blame publicly before facts are established</li>
-                        <li>• Support involved clinicians while still honoring due process</li>
-                        <li>• Use findings to improve systems, not just to punish individuals</li>
+            <!-- Leadership behavior -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-red-900 mb-4">Leadership Behavior During an Investigation</h3>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span>Communicate clearly with your crews about process and expectations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span>Avoid assigning blame publicly before facts are established</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span>Support involved clinicians while still honoring due process</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-600 font-bold text-xl">•</span>
+                            <span>Use findings to improve systems, not just to punish individuals</span>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Why states license: police powers & public protection -->
-            <div class="mt-8 bg-gradient-to-r from-slate-50 to-slate-100 border-l-4 border-slate-500 p-6 rounded-r-lg">
-                <h3 class="font-bold text-lg text-slate-900 mb-3">⚖️ Why States License EMS: Police Powers & Public Protection</h3>
-                <p class="text-sm text-gray-700 mb-3">
+            <div class="bg-slate-50 border-l-4 border-slate-500 p-6 rounded-r-lg">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">⚖️ Why States License EMS: Police Powers & Public Protection</h3>
+                <p class="text-gray-700 mb-4">
                     EMS licensure is not a courtesy or a credential earned once and forgotten. It exists under the state's <strong>police powers</strong> in the constitution, for one core purpose: <strong>to protect the public</strong> from unqualified or unsafe practitioners.
                 </p>
-                <p class="text-sm text-gray-700 mb-3">
+                <p class="text-gray-700 mb-4">
                     Courts have long recognized that states can require professional licenses and revoke them when necessary to protect the public. Classic cases such as <strong>Dent v. West Virginia</strong> and <strong>Hawker v. New York</strong> frame professional licensure around two main concepts:
                 </p>
 
-                <ul class="ml-4 mt-1 space-y-1 text-sm text-gray-700">
-                    <li>• <strong>Competency:</strong> Does the clinician have the knowledge, skills, and judgment to practice safely?</li>
-                    <li>• <strong>Morality / character:</strong> Does the clinician's behavior show they can be trusted with the public’s safety and welfare?</li>
-                </ul>
-
-                <div class="mt-4 bg-white p-4 rounded-lg shadow">
-                    <h4 class="font-semibold text-slate-900 mb-2 text-sm">Most Complaints Fit One of Two Buckets</h4>
-                    <ul class="ml-4 mt-1 space-y-1 text-sm text-gray-700">
-                        <li>• <strong>Competency issues:</strong> Clinical errors, poor documentation, protocol deviations, unsafe decision-making.</li>
-                        <li>• <strong>Morality / character issues:</strong> Fraud, diversion, abuse, discrimination, harassment, criminal conduct, dishonesty.</li>
-                    </ul>
-                    <p class="mt-3 text-xs text-gray-700">
-                        As a leader, one of your jobs is to correctly identify which kind of problem you are dealing with and respond proportionally.
-                    </p>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-900 mb-3">Competency</h4>
+                        <p class="text-gray-700">Does the clinician have the knowledge, skills, and judgment to practice safely?</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-900 mb-3">Morality / Character</h4>
+                        <p class="text-gray-700">Does the clinician's behavior show they can be trusted with the public's safety and welfare?</p>
+                    </div>
                 </div>
 
-             <div class="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
-    <p class="text-sm text-amber-900 font-semibold mb-1">🔥 Key Leadership Principle</p>
-    <p class="text-sm text-gray-800 mb-3">
-        <strong>Do not turn a competency issue into a morality issue.</strong>
-        A clinician who needs education, coaching, or remediation should not be treated as unethical or immoral. 
-        Conflating the two:
-    </p>
+                <div class="bg-white p-6 rounded-lg shadow mb-6">
+                    <h4 class="font-bold text-gray-900 mb-4">Most Complaints Fit One of Two Buckets</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="font-semibold text-gray-900 mb-2">Competency Issues</h5>
+                            <p class="text-gray-700 text-sm">Clinical errors, poor documentation, protocol deviations, unsafe decision-making</p>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-900 mb-2">Morality / Character Issues</h5>
+                            <p class="text-gray-700 text-sm">Fraud, diversion, abuse, discrimination, harassment, criminal conduct, dishonesty</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-sm text-gray-700">
+                            <strong>Leadership Responsibility:</strong> One of your jobs is to correctly identify which kind of problem you are dealing with and respond proportionally.
+                        </p>
+                    </div>
+                </div>
 
-    <ul class="ml-4 mt-1 space-y-1 text-sm text-gray-700">
-        <li>• Escalates fear instead of learning</li>
-        <li>• Discourages honest error reporting and open debriefing</li>
-        <li>• Damages careers when education would have solved the problem</li>
-    </ul>
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                    <h4 class="font-bold text-amber-900 mb-4">🔥 Key Leadership Principle</h4>
+                    <p class="text-gray-800 mb-4">
+                        <strong>Do not turn a competency issue into a morality issue.</strong>
+                        A clinician who needs education, coaching, or remediation should not be treated as unethical or immoral. 
+                        Conflating the two:
+                    </p>
 
-    <p class="text-sm text-gray-800 mt-4">
-        When an investigation begins, and the issue is <strong>competency</strong>—not misconduct—EMS clinicians must respond with 
-        professionalism and honesty. Tell the truth. Own what happened. Be transparent about what you saw, decided, and did.
-    </p>
+                    <ul class="space-y-2 text-gray-700 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span>Escalates fear instead of learning</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span>Discourages honest error reporting and open debriefing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span>Damages careers when education would have solved the problem</span>
+                        </li>
+                    </ul>
 
-    <p class="text-sm text-gray-800 mt-3">
-        The fastest way to turn a competency issue <em>into</em> a morality issue is by trying to hide it: 
-        falsifying documentation, changing narratives later, omitting information, or being deceptive with investigators. 
-        These actions transform a correctable clinical issue into a character and integrity problem.
-    </p>
+                    <p class="text-gray-800 mb-4">
+                        When an investigation begins, and the issue is <strong>competency</strong>—not misconduct—EMS clinicians must respond with 
+                        professionalism and honesty. Tell the truth. Own what happened. Be transparent about what you saw, decided, and did.
+                    </p>
 
-    <p class="text-sm text-gray-800 mt-4">
-        <strong>State EMS Offices and regulators have many tools to correct competency issues</strong>—education, remediation, mentorship, 
-        targeted training, practice restrictions, QI follow-up, and monitored improvement plans. These tools exist because competency issues 
-        are expected in a complex clinical environment, and they can almost always be fixed.  
-    </p>
+                    <p class="text-gray-800 mb-4">
+                        The fastest way to turn a competency issue <em>into</em> a morality issue is by trying to hide it: 
+                        falsifying documentation, changing narratives later, omitting information, or being deceptive with investigators. 
+                        These actions transform a correctable clinical issue into a character and integrity problem.
+                    </p>
 
-    <p class="text-sm text-gray-800 mt-2">
-        <strong>But regulators have very few tools for morality issues.</strong> When dishonesty, falsification, or deception occurs, 
-        the only regulatory remedies available are often suspension, revocation, or permanent restrictions. Integrity failures remove the 
-        ability of the state to trust the clinician with independent medical authority.
-    </p>
+                    <div class="bg-white p-6 rounded-lg shadow mb-4">
+                        <h5 class="font-bold text-gray-900 mb-3">State EMS Offices Have Many Tools for Competency Issues</h5>
+                        <p class="text-gray-700 mb-3">
+                            These tools exist because competency issues are expected in a complex clinical environment, and they can almost always be fixed:
+                        </p>
+                        <ul class="grid md:grid-cols-2 gap-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Education and remediation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Mentorship programs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Targeted training</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Practice restrictions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>QI follow-up</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span>Monitored improvement plans</span>
+                            </li>
+                        </ul>
+                    </div>
 
-    <div class="mt-3 bg-white p-3 rounded shadow-sm">
-        <p class="text-xs text-gray-700 italic">
-            Honesty keeps the issue in the competency category, where remediation, education, and structured improvement can occur.  
-            Dishonesty moves it into the morality category, where consequences become severe and long-lasting.
-        </p>
-    </div>
-</div>       
-      
+                    <p class="text-gray-800 mb-4">
+                        <strong>But regulators have very few tools for morality issues.</strong> When dishonesty, falsification, or deception occurs, 
+                        the only regulatory remedies available are often suspension, revocation, or permanent restrictions. Integrity failures remove the 
+                        ability of the state to trust the clinician with independent medical authority.
+                    </p>
+
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <p class="text-sm text-gray-700 italic">
+                            <strong>Bottom Line:</strong> Honesty keeps the issue in the competency category, where remediation, education, and structured improvement can occur. Dishonesty moves it into the morality category, where consequences become severe and long-lasting.
+                        </p>
+                    </div>
+                </div>       
             </div>
         </div>
     </div>
 </section>
 
+<!-- Section: Conducting Regulatory Investigations -->
+<section id="conducting-investigations" class="mb-12">
+    <div class="section-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-gradient-to-r from-indigo-600 to-indigo-700 p-6 text-white">
+            <div class="flex items-center gap-4">
+                <div class="icon-circle bg-white text-indigo-600">⚖️</div>
+                <div>
+                    <h2 class="text-3xl font-bold">Conducting Regulatory Investigations</h2>
+                    <p class="text-indigo-100 mt-1">A Process Guide for Regulators & Senior EMS Leaders</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-8">
+            <!-- Overview -->
+            <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-lg mb-8">
+                <h3 class="text-xl font-bold text-indigo-900 mb-4">The Regulatory Investigation Framework</h3>
+                <p class="text-gray-700 mb-3">
+                    Regulatory investigations are a core function of state EMS offices operating under administrative law. The investigation process balances two critical duties: <strong>protecting the public</strong> from unsafe practitioners and ensuring <strong>due process</strong> for licensed clinicians.
+                </p>
+                <p class="text-gray-700">
+                    This section provides a structured approach to conducting fair, thorough, and legally defensible investigations that serve both public safety and professional accountability.
+                </p>
+            </div>
+
+            <!-- Legal Foundation -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-indigo-900 mb-4">Legal Foundations of Regulatory Authority</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-400">
+                        <h4 class="font-bold text-gray-900 mb-3">10th Amendment & Police Powers</h4>
+                        <p class="text-gray-700">
+                            States have the constitutional authority to "protect the health, safety, and welfare of its citizenry" through professional licensing and regulation.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-400">
+                        <h4 class="font-bold text-gray-900 mb-3">Dent v. West Virginia (1889)</h4>
+                        <p class="text-gray-700">
+                            Supreme Court confirmed that states can regulate medicine and other professions via professional licensing boards to protect public safety.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-400">
+                        <h4 class="font-bold text-gray-900 mb-3">Hawker v. New York (1898)</h4>
+                        <p class="text-gray-700">
+                            Upheld the state's authority to revoke medical licenses based on past criminal convictions, reinforcing evaluation of moral character.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-400">
+                        <h4 class="font-bold text-gray-900 mb-3">Administrative Law Framework</h4>
+                        <p class="text-gray-700">
+                            Investigations operate under administrative law with <strong>"substantial evidence"</strong> standard—evidence a reasonable person would consider strong enough to support a conclusion.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                    <p class="text-gray-800">
+                        <strong>Key Principle:</strong> Licensure evaluates both <strong>competency</strong> (knowledge, skills, judgment) and <strong>moral character</strong> (trustworthiness, integrity, behavior). Most complaints fall into one of these two categories.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Origins of Complaints -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-indigo-900 mb-4">Origins of EMS Complaints & Investigations</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-gray-900 mb-4">External Sources</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Patients and families</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Receiving facilities</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Law enforcement</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>News media</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Elected officials</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>General public</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-gray-900 mb-4">Internal Sources</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>EMS colleagues</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>EMS employers/agencies</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Medical directors</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>QI/QA programs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Peer review processes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-gray-900 mb-4">State-Initiated</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Routine compliance audits</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Site inspections</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Data analysis flags</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>License application reviews</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-indigo-600">•</span>
+                                <span>Cross-state notifications</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THE COMPLAINT PROCESS - Main Focus -->
+            <div class="mb-8">
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold flex items-center gap-3">
+                        <span class="text-3xl">📋</span>
+                        The Regulatory Investigation Process
+                    </h3>
+                    <p class="text-indigo-100 mt-2">An 8-stage framework for conducting thorough, fair, and legally defensible investigations</p>
+                </div>
+
+                <!-- Process Flow Diagram -->
+                <div class="space-y-6">
+                    
+                    <!-- Stage 1: Complaint Received -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-orange-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">1</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-orange-900 mb-3">Complaint Received</h4>
+                                <p class="text-gray-700 mb-4">
+                                    All complaints must be logged, tracked, and acknowledged. Establish a consistent intake process regardless of source.
+                                </p>
+                                <div class="bg-orange-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-orange-900 mb-3">Key Actions:</p>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-orange-600 font-bold">→</span>
+                                            <span>Document date, time, source, and nature of complaint</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-orange-600 font-bold">→</span>
+                                            <span>Assign case number and investigator</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-orange-600 font-bold">→</span>
+                                            <span>Acknowledge receipt to complainant (if identified)</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-orange-600 font-bold">→</span>
+                                            <span>Begin case file with all initial documentation</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2: Internal Review -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-gray-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-gray-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">2</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-gray-900 mb-3">Internal Review & Assessment</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Conduct preliminary review to determine if the complaint warrants full investigation.
+                                </p>
+                                <div class="grid md:grid-cols-3 gap-4 mb-4">
+                                    <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                                        <p class="font-semibold text-yellow-900 mb-2">Jurisdiction?</p>
+                                        <p class="text-sm text-gray-700">Does the state have authority over this licensee/situation?</p>
+                                    </div>
+                                    <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                                        <p class="font-semibold text-yellow-900 mb-2">Validity?</p>
+                                        <p class="text-sm text-gray-700">Is the complaint complete, specific, and within scope?</p>
+                                    </div>
+                                    <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                                        <p class="font-semibold text-yellow-900 mb-2">Credible?</p>
+                                        <p class="text-sm text-gray-700">Is there sufficient basis to warrant investigation?</p>
+                                    </div>
+                                </div>
+                                <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+                                    <p class="font-semibold text-red-900 mb-2">⚠️ Decision Point: Dismiss or Proceed?</p>
+                                    <p class="text-sm text-gray-700">If lacking jurisdiction, validity, or credibility → Document reasoning and close case with notification to complainant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3: Evidence Collection -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">3</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-yellow-900 mb-3">Documents & Evidence Collection</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Gather all relevant contemporaneous documentation. Use subpoena powers when necessary.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="bg-yellow-50 p-4 rounded-lg">
+                                        <p class="font-semibold text-yellow-900 mb-3">Clinical Records:</p>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Patient care reports (PCRs)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Hospital records</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Dispatch records & CAD data</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Medical director protocols</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>QI/QA documentation</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-yellow-50 p-4 rounded-lg">
+                                        <p class="font-semibold text-yellow-900 mb-3">Background & Context:</p>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Video/audio recordings</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>License applications & history</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Criminal history checks</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Previous complaints or actions</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">•</span>
+                                                <span>Employment records</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mt-4 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Best Practice:</strong> Contemporaneous data (recorded at the time of the incident) carries more weight than post-incident recollections. Prioritize original documentation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 4: Notification -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">4</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-blue-900 mb-3">Notification to EMS Clinician</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Issue formal <strong>Notice of Inquiry</strong> to the licensee. This begins the due process requirements.
+                                </p>
+                                <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                                    <p class="font-semibold text-blue-900 mb-3">Notice Must Include:</p>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-blue-600">→</span>
+                                            <span>Nature of the complaint or concern</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-blue-600">→</span>
+                                            <span>Specific incident details (date, location, patient info if applicable)</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-blue-600">→</span>
+                                            <span>Potential violations being investigated</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-blue-600">→</span>
+                                            <span>Timeline for response</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-blue-600">→</span>
+                                            <span>Right to legal representation</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-blue-600">→</span>
+                                            <span>Process and next steps</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-400">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Due Process Note:</strong> The clinician has the right to know what they're being investigated for and to respond to allegations. Provide adequate time for response (typically 14-30 days).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 5: Discussion -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-cyan-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-cyan-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">5</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-cyan-900 mb-3">Discussion & Response Review</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Allow the clinician opportunity to provide their perspective, explanation, and any additional evidence.
+                                </p>
+                                <div class="bg-cyan-50 p-4 rounded-lg mb-4">
+                                    <p class="font-semibold text-cyan-900 mb-3">Clinician May Provide:</p>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-cyan-600">•</span>
+                                            <span>Written statement or response</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-cyan-600">•</span>
+                                            <span>Supporting documentation</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-cyan-600">•</span>
+                                            <span>Witness statements</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-cyan-600">•</span>
+                                            <span>Context or mitigating circumstances</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-cyan-600">•</span>
+                                            <span>Evidence of remediation already taken</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Investigator Role:</strong> Remain objective and fair. Assess the response for credibility, consistency with evidence, and whether it affects the findings. This is not adversarial—you're seeking truth, not a conviction.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 6: Additional Evidence -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">6</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-green-900 mb-3">Additional Evidence Gathering</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Based on the clinician's response, conduct additional investigation as needed.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <p class="font-semibold text-green-900 mb-3">Investigation Methods:</p>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Depositions under oath</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Witness interviews</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Subject matter expert review</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Additional document requests</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Video/audio analysis</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <p class="font-semibold text-green-900 mb-3">Key Principles:</p>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Questions should be strategic</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Assess trustworthiness</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Look for consistency with evidence</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Remain professional and respectful</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-600">•</span>
+                                                <span>Document everything</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mt-4 bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-400">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Remember:</strong> Investigators often have more information than they reveal. Strategic questioning can assess credibility and honesty. Watch for evasiveness or inconsistency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decision Point: Dismiss Path -->
+                    <div class="bg-gray-50 rounded-lg p-6 border-2 border-dashed border-gray-400">
+                        <div class="flex items-center gap-4">
+                            <div class="text-5xl text-green-600">✓</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Decision Point: Case Dismissed</h4>
+                                <p class="text-sm text-gray-700">
+                                    If evidence does not support allegations or does not meet "substantial evidence" standard → Document findings, notify all parties, close case. May dismiss at any stage after internal review.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 7: Notice of Charges -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">7</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-red-900 mb-3">Notice of Charges</h4>
+                                <p class="text-gray-700 mb-4">
+                                    If substantial evidence supports a violation, issue formal <strong>Notice of Charges</strong>. This initiates formal legal proceedings.
+                                </p>
+                                <div class="bg-red-50 p-4 rounded-lg mb-4">
+                                    <p class="font-semibold text-red-900 mb-3">Notice of Charges Must Specify:</p>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-red-600">→</span>
+                                            <span>Specific statutory or regulatory violations</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-red-600">→</span>
+                                            <span>Evidence supporting each charge</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-red-600">→</span>
+                                            <span>Potential sanctions or remedies being considered</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-red-600">→</span>
+                                            <span>Right to hearing before administrative law judge</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-red-600">→</span>
+                                            <span>Timeline for response or hearing request</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-red-600">→</span>
+                                            <span>Settlement/consent agreement options</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-400">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Legal Standard:</strong> Proceedings are now formal and on behalf of the State. This may involve the Attorney General's office or state legal counsel. The burden is on the state to prove violations by substantial evidence.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 8: Conclusion -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-purple-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">8</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="text-xl font-bold text-purple-900 mb-3">Conclusion & Resolution</h4>
+                                <p class="text-gray-700 mb-4">
+                                    The case concludes through one of several pathways:
+                                </p>
+                                <div class="space-y-4">
+                                    <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                                        <p class="font-semibold text-green-900 mb-2">Consent Agreement (Stipulation)</p>
+                                        <p class="text-sm text-gray-700">Negotiated settlement where clinician agrees to specific actions (education, probation, restrictions, etc.) without formal hearing. Most common resolution.</p>
+                                    </div>
+                                    
+                                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                                        <p class="font-semibold text-blue-900 mb-2">Administrative Hearing</p>
+                                        <p class="text-sm text-gray-700">Formal hearing before administrative law judge. State presents evidence, clinician defends. Judge issues findings and recommended sanctions.</p>
+                                    </div>
+                                    
+                                    <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400">
+                                        <p class="font-semibold text-orange-900 mb-2">Appeal</p>
+                                        <p class="text-sm text-gray-700">Clinician may appeal administrative decision to state courts. Typically reviews for abuse of discretion or procedural errors, not re-trying facts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Post-Resolution -->
+                <div class="mt-8 bg-slate-50 rounded-lg shadow-lg p-6 border-t-4 border-indigo-500">
+                    <h4 class="text-xl font-bold text-indigo-900 mb-4">Post-Resolution Requirements</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="font-semibold text-gray-900 mb-3">Required Reporting:</h5>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>National Practitioner Data Bank (NPDB)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>National EMS Coordinated Database (NEMSCD)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>National Registry of EMTs (if applicable)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>State boards in other jurisdictions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>Interstate Compact Commission (for Compact states)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-900 mb-3">Required Notifications:</h5>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>Current employer</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>Medical director</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>EMS agency administrators</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>Public (depending on state law)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-indigo-600">→</span>
+                                    <span>Complainant (with appropriate confidentiality)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Referrals and Parallel Proceedings -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-indigo-900 mb-4">Referrals & Parallel Proceedings</h3>
+                
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-6">
+                    <p class="text-gray-800 mb-3">
+                        <strong>Critical Concept:</strong> Administrative law proceedings can run parallel to civil and criminal proceedings. This is <strong>not double jeopardy</strong>—they are separate legal frameworks with different standards, purposes, and remedies.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
+                        <h4 class="font-bold text-gray-900 mb-3">Criminal Law</h4>
+                        <p class="text-sm text-gray-700 mb-2"><strong>Standard:</strong> Beyond reasonable doubt</p>
+                        <p class="text-sm text-gray-700 mb-2"><strong>Remedy:</strong> Prison, fines, probation</p>
+                        <p class="text-sm text-gray-700"><strong>May refer to:</strong> District Attorney, federal prosecutors</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
+                        <h4 class="font-bold text-gray-900 mb-3">Civil Law</h4>
+                        <p class="text-sm text-gray-700 mb-2"><strong>Standard:</strong> Preponderance of evidence</p>
+                        <p class="text-sm text-gray-700 mb-2"><strong>Remedy:</strong> Monetary damages, restitution</p>
+                        <p class="text-sm text-gray-700"><strong>May involve:</strong> Malpractice claims, wrongful death suits</p>
+                    </div>
+                    
+                    <div class="bg-indigo-50 p-6 rounded-lg border-l-4 border-indigo-500">
+                        <h4 class="font-bold text-indigo-900 mb-3">Administrative Law</h4>
+                        <p class="text-sm text-gray-700 mb-2"><strong>Standard:</strong> Substantial evidence</p>
+                        <p class="text-sm text-gray-700 mb-2"><strong>Remedy:</strong> License sanctions, education, restrictions</p>
+                        <p class="text-sm text-gray-700"><strong>Purpose:</strong> Public protection & licensure regulation</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-lg">
+                    <h4 class="font-semibold text-slate-900 mb-3">Common Referral Scenarios:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">→</span>
+                            <span><strong>Drug diversion:</strong> Refer to DEA, state pharmacy board, criminal prosecutors</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">→</span>
+                            <span><strong>Medicare/Medicaid fraud:</strong> Refer to federal investigators, CMS, OIG</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">→</span>
+                            <span><strong>Criminal acts:</strong> Refer to appropriate law enforcement</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">→</span>
+                            <span><strong>Civil malpractice potential:</strong> Patient/family may pursue independently</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">→</span>
+                            <span><strong>Multi-state issues:</strong> Notify other state licensing authorities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Competency vs Morality Framework -->
+            <div class="mb-8">
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Investigation Framework: Competency vs. Morality</h3>
+                    <p class="text-blue-100">Understanding the distinction is essential for appropriate investigation approach and sanctions</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-orange-400">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="text-4xl">📚</div>
+                            <h4 class="text-xl font-bold text-orange-900">Competency Issues</h4>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Problems with knowledge, skills, judgment, or clinical decision-making. These are <strong>correctable through education</strong>.
+                        </p>
+                        <div class="bg-orange-50 p-4 rounded-lg mb-4">
+                            <p class="font-semibold text-orange-900 mb-3">Examples:</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-600">•</span>
+                                    <span>Clinical errors or poor assessment</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-600">•</span>
+                                    <span>Protocol deviations from lack of knowledge</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-600">•</span>
+                                    <span>Poor documentation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-600">•</span>
+                                    <span>Unsafe decision-making from inexperience</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-600">•</span>
+                                    <span>Inadequate scene safety practices</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="font-semibold text-green-900 mb-3">Available Remedies:</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-green-600">✓</span>
+                                    <span>Remedial education</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-green-600">✓</span>
+                                    <span>Skills retraining</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-green-600">✓</span>
+                                    <span>Mentorship programs</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-green-600">✓</span>
+                                    <span>Practice under supervision</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-green-600">✓</span>
+                                    <span>Temporary restrictions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-green-600">✓</span>
+                                    <span>Monitored improvement plans</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-600">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="text-4xl">⚖️</div>
+                            <h4 class="text-xl font-bold text-purple-900">Morality/Character Issues</h4>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Problems with integrity, trustworthiness, honesty, or ethical behavior. These <strong>undermine public trust</strong>.
+                        </p>
+                        <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                            <p class="font-semibold text-purple-900 mb-3">Examples:</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-purple-600">•</span>
+                                    <span>Fraud, theft, or diversion</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-purple-600">•</span>
+                                    <span>Falsification of records</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-purple-600">•</span>
+                                    <span>Patient abuse or harassment</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-purple-600">•</span>
+                                    <span>Dishonesty in investigations</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-purple-600">•</span>
+                                    <span>Criminal conduct</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-purple-600">•</span>
+                                    <span>Discrimination or harassment</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <p class="font-semibold text-red-900 mb-3">Available Remedies:</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-red-600">✗</span>
+                                    <span>Suspension</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-red-600">✗</span>
+                                    <span>Revocation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-red-600">✗</span>
+                                    <span>Permanent restrictions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-red-600">✗</span>
+                                    <span>Probation with strict monitoring</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-red-600">✗</span>
+                                    <span>Denial of future licensure</span>
+                                </li>
+                            </ul>
+                            <p class="text-sm text-gray-700 mt-3 italic">
+                                Note: Far fewer remedial options available because trust has been broken.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <p class="font-bold text-red-900 mb-3">⚠️ Critical Warning for Clinicians</p>
+                    <p class="text-gray-800">
+                        The fastest way to transform a <strong>competency issue into a morality issue</strong> is through dishonesty during the investigation. Falsifying records, lying to investigators, or attempting to cover up errors converts a correctable clinical problem into an integrity violation with severe career consequences.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Best Practices for Investigators -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-indigo-900 mb-4">Best Practices for Regulatory Investigators</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400">
+                        <h4 class="font-bold text-blue-900 mb-3">Maintain Objectivity</h4>
+                        <p class="text-gray-700">
+                            Your role is fact-finding, not prosecution. Approach each case with neutrality and follow the evidence wherever it leads. Avoid confirmation bias.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-400">
+                        <h4 class="font-bold text-green-900 mb-3">Document Everything</h4>
+                        <p class="text-gray-700">
+                            Create a thorough, contemporaneous record of all investigation activities, evidence reviewed, interviews conducted, and decisions made. Your case file may be subject to legal scrutiny.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-400">
+                        <h4 class="font-bold text-purple-900 mb-3">Protect Confidentiality</h4>
+                        <p class="text-gray-700">
+                            Investigation files contain sensitive information. Follow state confidentiality laws regarding what can be disclosed and when. Balance transparency with privacy.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-400">
+                        <h4 class="font-bold text-orange-900 mb-3">Respect Due Process</h4>
+                        <p class="text-gray-700">
+                            Ensure adequate notice, opportunity to respond, and fair procedures. Due process violations can invalidate entire investigations and expose the state to legal liability.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-indigo-50 p-6 rounded-lg border-l-4 border-indigo-400">
+                        <h4 class="font-bold text-indigo-900 mb-3">Balance Competing Interests</h4>
+                        <p class="text-gray-700">
+                            Regulators must protect public safety while also preserving workforce stability and supporting professional growth. Sanctions should be proportional and focused on rehabilitation when appropriate.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-teal-50 p-6 rounded-lg border-l-4 border-teal-400">
+                        <h4 class="font-bold text-teal-900 mb-3">Communicate Clearly</h4>
+                        <p class="text-gray-700">
+                            Keep all parties informed of process, timelines, and expectations. Clear communication reduces anxiety, builds trust in the process, and prevents misunderstandings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Takeaways -->
+            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-xl">
+                <h3 class="text-2xl font-bold mb-6">Key Takeaways for Regulatory Investigators</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Follow a consistent, documented process for all investigations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Differentiate between competency and moral character issues</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Prioritize contemporaneous documentation and evidence</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Ensure due process at every stage</span>
+                        </li>
+                    </ul>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Meet the "substantial evidence" standard before proceeding to charges</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Consider rehabilitation and education when appropriate</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Report final actions to required databases and authorities</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 font-bold text-xl">→</span>
+                            <span>Balance public protection with workforce stability</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+    
         <!-- Section: Essential Leadership Frameworks -->
         <section id="frameworks" class="mb-12">
             <div class="section-card bg-white rounded-xl shadow-lg overflow-hidden">
@@ -4736,147 +5759,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <!-- Resources Section - Books & More -->
-        <section id="resources" class="mb-12">
-            <div class="bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 rounded-xl shadow-2xl p-8 md:p-12 text-white">
-                <div class="text-center mb-10">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4">📚 Books & Resources by Donnie Woodyard</h2>
-                    <p class="text-xl text-blue-200 max-w-3xl mx-auto">Explore additional EMS leadership resources, books, and training opportunities to enhance your professional development</p>
-                </div>
-
-                <!-- Books Grid -->
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    
-                    <!-- Book 1: Leadership in Action -->
-                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 border border-white/20">
-                        <div class="flex flex-col h-full">
-                            <h3 class="text-2xl font-bold mb-3 text-yellow-300">📖 Leadership in Action</h3>
-                            <p class="text-lg font-semibold mb-3 text-blue-200">The Wisdom and Stories of EMS Innovators</p>
-                            <p class="text-white/90 mb-4 flex-grow">
-                                A powerful compilation of personal leadership experiences from over 40 respected EMS leaders. Features a foreword by Secretary Leon Panetta. This collection captures real-world wisdom, hard-earned lessons, and transformative insights from industry pioneers.
-                            </p>
-                            <div class="text-sm text-blue-200 mb-4">
-                                <strong>Perfect for:</strong> Aspiring and current EMS leaders, clinicians transitioning to leadership, public safety professionals
-                            </div>
-                            <div class="mt-auto">
-                                <a href="https://www.ems-history.com/leadership-in-action" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-6 py-3 rounded-lg font-bold hover:from-yellow-300 hover:to-orange-400 transition-all shadow-lg">
-                                    Learn More & Purchase →
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 2: The Future of EMS -->
-                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 border border-white/20">
-                        <div class="flex flex-col h-full">
-                            <h3 class="text-2xl font-bold mb-3 text-green-300">🚀 The Future of Emergency Medical Services</h3>
-                            <p class="text-lg font-semibold mb-3 text-blue-200">Artificial Intelligence, Technology & Innovation</p>
-                            <p class="text-white/90 mb-4 flex-grow">
-                                A comprehensive exploration of how AI and technology are transforming EMS. This guide addresses challenges, opportunities, and ethical considerations of integrating advanced technologies into emergency medical services.
-                            </p>
-                            <div class="text-sm text-blue-200 mb-4">
-                                <strong>Topics include:</strong> AI-powered documentation, real-time decision support, strategic integration frameworks, ethical use
-                            </div>
-                            <div class="mt-auto">
-                                <a href="https://www.ems-history.com/the-future-of-emergency-medical-services" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-block bg-gradient-to-r from-green-400 to-teal-500 text-gray-900 px-6 py-3 rounded-lg font-bold hover:from-green-300 hover:to-teal-400 transition-all shadow-lg">
-                                    Learn More & Purchase →
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 3: EMS in the United States -->
-                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 border border-white/20">
-                        <div class="flex flex-col h-full">
-                            <h3 class="text-2xl font-bold mb-3 text-red-300">🇺🇸 EMS in the United States</h3>
-                            <p class="text-lg font-semibold mb-3 text-blue-200">A Comprehensive Guide to the System</p>
-                            <p class="text-white/90 mb-4 flex-grow">
-                                A desk reference providing historical context for pivotal decisions that shaped contemporary EMS systems. From the birth of EMS in the United States to current challenges like health equity and COVID-19, this guide offers essential insights for emerging EMS leaders.
-                            </p>
-                            <div class="text-sm text-blue-200 mb-4">
-                                <strong>Includes:</strong> Over 100 references to Congressional records, historical documents, and policy decisions
-                            </div>
-                            <div class="mt-auto">
-                                <a href="https://www.ems-history.com/ems-in-the-united-states" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-block bg-gradient-to-r from-red-400 to-pink-500 text-white px-6 py-3 rounded-lg font-bold hover:from-red-300 hover:to-pink-400 transition-all shadow-lg">
-                                    Learn More & Purchase →
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 4: Across State Lines -->
-                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 border border-white/20">
-                        <div class="flex flex-col h-full">
-                            <h3 class="text-2xl font-bold mb-3 text-blue-300">🗺️ Across State Lines</h3>
-                            <p class="text-lg font-semibold mb-3 text-blue-200">The Essential Textbook on the United States EMS Compact</p>
-                            <p class="text-white/90 mb-4 flex-grow">
-                                The definitive resource on the EMS Compact—designed for EMS educators, agency leaders, students, and policy professionals. Covers the legal foundation, operational structure, and real-world implications of interstate EMS licensure.
-                            </p>
-                            <div class="text-sm text-blue-200 mb-4">
-                                <strong>Perfect for:</strong> EMS students, instructors, college programs, state officials navigating the Compact
-                            </div>
-                            <div class="mt-auto">
-                                <a href="https://www.ems-history.com/across-state-lines" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-block bg-gradient-to-r from-blue-400 to-indigo-500 text-white px-6 py-3 rounded-lg font-bold hover:from-blue-300 hover:to-indigo-400 transition-all shadow-lg">
-                                    Learn More & Purchase →
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Additional Resources -->
-                <div class="border-t-2 border-white/30 pt-10">
-                    <div class="grid md:grid-cols-2 gap-8">
-                        
-                        <!-- Website -->
-                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-                            <h3 class="text-2xl font-bold mb-4 text-purple-300">🌐 EMS History & Resources</h3>
-                            <p class="text-white/90 mb-4">
-                                Visit <strong>ems-history.com</strong> for comprehensive resources on EMS history, leadership, and innovation. Explore articles, historical documents, and insights from over 30 years of EMS experience.
-                            </p>
-                            <a href="https://www.ems-history.com" target="_blank" rel="noopener noreferrer" 
-                               class="inline-block bg-white text-purple-900 px-6 py-3 rounded-lg font-bold hover:bg-purple-100 transition-all shadow-lg">
-                                Visit Website →
-                            </a>
-                        </div>
-
-                        <!-- Connect -->
-                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-                            <h3 class="text-2xl font-bold mb-4 text-blue-300">🤝 Connect & Learn More</h3>
-                            <p class="text-white/90 mb-4">
-                                <strong>Leadership Training & Workshops:</strong> Bring EMS leadership courses to your agency, region, or conference. Available in 1-hour, 4-hour, 8-hour, and 16-hour formats.
-                            </p>
-                            <div class="space-y-3">
-                                <a href="https://www.linkedin.com/in/donwoodyard/" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-all shadow-lg w-full text-center">
-                                    💼 Connect on LinkedIn
-                                </a>
-                                <a href="https://www.ems-history.com" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-block bg-white text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-lg w-full text-center">
-                                    📧 Contact for Training
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- About the Author -->
-                <div class="mt-10 bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-                    <h3 class="text-xl font-bold mb-3 text-yellow-300">About Donnie Woodyard, Jr.</h3>
-                    <p class="text-white/90 leading-relaxed">
-                        Donnie is Executive Director of the United States EMS Compact Commission (REPLICA), with extensive EMS leadership experience as former State EMS Director for Colorado and Louisiana, and COO of the National Registry of Emergency Medical Technicians. A 30-year paramedic, pilot, and entrepreneur, he has published five books on EMS leadership and innovation, founded Sri Lanka's modern EMS system, and delivers keynote addresses nationwide on the future of EMS.
-                    </p>
-                </div>
-
-            </div>
+        </div>
         </section>
 
         <!-- Download/Print Section -->
@@ -4970,11 +5853,6 @@
         // ========================================
         
         document.addEventListener('DOMContentLoaded', function() {
-            // Ensure body scrolling is enabled on load
-            document.body.style.overflow = '';
-            document.body.style.position = '';
-            document.body.style.width = '';
-            
             initProgressBar();
             initBackToTop();
             initMobileMenu();
@@ -4985,38 +5863,11 @@
             
             // Close mobile menu when clicking nav links
             document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', (e) => {
-                    const href = link.getAttribute('href');
-                    
-                    // Only handle internal links
-                    if (href && href.startsWith('#')) {
-                        e.preventDefault();
-                        
-                        // Close menu first
-                        document.getElementById('mobile-menu').classList.remove('show');
-                        document.getElementById('hamburger-btn').classList.remove('active');
-                        document.body.style.overflow = '';
-                        document.body.style.position = '';
-                        document.body.style.top = '';
-                        document.body.style.width = '';
-                        
-                        // Then scroll to target after a brief delay
-                        setTimeout(() => {
-                            const target = document.querySelector(href);
-                            if (target) {
-                                target.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'start'
-                                });
-                                history.pushState(null, null, href);
-                            }
-                        }, 150);
-                    }
+                link.addEventListener('click', () => {
+                    document.getElementById('mobile-menu').classList.remove('show');
+                    document.getElementById('hamburger-btn').classList.remove('active');
                 });
             });
-            
-            // Initialize PWA
-            initPWA();
         });
         
         // ========================================
@@ -5088,8 +5939,6 @@
             });
         }
         
-        let scrollPosition = 0;
-        
         function toggleMobileMenu() {
             const hamburgerBtn = document.getElementById('hamburger-btn');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -5097,19 +5946,11 @@
             hamburgerBtn.classList.toggle('active');
             mobileMenu.classList.toggle('show');
             
-            // Only prevent body scroll when menu is actually open
+            // Prevent body scroll when menu is open
             if (mobileMenu.classList.contains('show')) {
-                scrollPosition = window.pageYOffset;
                 document.body.style.overflow = 'hidden';
-                document.body.style.position = 'fixed';
-                document.body.style.top = `-${scrollPosition}px`;
-                document.body.style.width = '100%';
             } else {
                 document.body.style.overflow = '';
-                document.body.style.position = '';
-                document.body.style.top = '';
-                document.body.style.width = '';
-                window.scrollTo(0, scrollPosition);
             }
         }
         
@@ -5120,10 +5961,6 @@
             hamburgerBtn.classList.remove('active');
             mobileMenu.classList.remove('show');
             document.body.style.overflow = '';
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.width = '';
-            window.scrollTo(0, scrollPosition);
         }
         
         // ========================================
@@ -5376,99 +6213,6 @@
                 }
             });
         });
-        
-        // ========================================
-        // PWA FUNCTIONALITY
-        // ========================================
-        
-        let deferredPrompt;
-        
-        function initPWA() {
-            // Register service worker
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(reg => console.log('Service Worker registered'))
-                    .catch(err => console.log('Service Worker registration failed'));
-            }
-            
-            // Handle install prompt
-            window.addEventListener('beforeinstallprompt', (e) => {
-                e.preventDefault();
-                deferredPrompt = e;
-                showInstallBanner();
-            });
-            
-            // Track if installed
-            window.addEventListener('appinstalled', () => {
-                console.log('PWA installed');
-                hideInstallBanner();
-                deferredPrompt = null;
-            });
-        }
-        
-        function showInstallBanner() {
-            // Don't show if already dismissed
-            if (localStorage.getItem('pwa-install-dismissed')) return;
-            
-            const banner = document.createElement('div');
-            banner.id = 'install-banner';
-            banner.className = 'no-print';
-            banner.style.cssText = `
-                position: fixed;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                color: white;
-                padding: 15px 25px;
-                border-radius: 12px;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-                z-index: 10000;
-                display: flex;
-                align-items: center;
-                gap: 15px;
-                max-width: 90%;
-                animation: slideUp 0.3s ease;
-            `;
-            
-            banner.innerHTML = `
-                <div style="flex: 1;">
-                    <div style="font-weight: bold; margin-bottom: 5px;">📱 Install EMS Leadership Guide</div>
-                    <div style="font-size: 14px; opacity: 0.9;">Access offline, faster loading, app-like experience</div>
-                </div>
-                <button onclick="installPWA()" style="background: white; color: #667eea; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer;">
-                    Install
-                </button>
-                <button onclick="dismissInstallBanner()" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 10px 15px; border-radius: 8px; cursor: pointer;">
-                    ✕
-                </button>
-            `;
-            
-            document.body.appendChild(banner);
-        }
-        
-        function hideInstallBanner() {
-            const banner = document.getElementById('install-banner');
-            if (banner) banner.remove();
-        }
-        
-        function installPWA() {
-            if (!deferredPrompt) return;
-            
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('User accepted install');
-                }
-                hideInstallBanner();
-                deferredPrompt = null;
-            });
-        }
-        
-        function dismissInstallBanner() {
-            hideInstallBanner();
-            localStorage.setItem('pwa-install-dismissed', 'true');
-        }
         
         // Add print timestamp
         window.addEventListener('beforeprint', () => {
