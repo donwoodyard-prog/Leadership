@@ -22,26 +22,19 @@
     }
   ],
   "categories": ["education", "medical", "business"],
-  "screenshots": [
-    {
-      "src": "screenshot1.png",
-      "sizes": "540x720",
-      "type": "image/png"
-    }
-  ],
   "shortcuts": [
     {
       "name": "Search Guide",
       "short_name": "Search",
       "description": "Search the leadership guide",
-      "url": "ems-leadership-guide-enhanced.html#search",
+      "url": "./#search",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Books & Resources",
       "short_name": "Resources",
       "description": "View books and training resources",
-      "url": "ems-leadership-guide-enhanced.html#resources",
+      "url": "./#resources",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     }
   ]
