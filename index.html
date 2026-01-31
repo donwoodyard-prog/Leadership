@@ -5879,8 +5879,7 @@
             // Close mobile menu when clicking nav links
             document.querySelectorAll('#mobile-menu a').forEach(link => {
                 link.addEventListener('click', () => {
-                    document.getElementById('mobile-menu').classList.remove('show');
-                    document.getElementById('hamburger-btn').classList.remove('active');
+                    closeMobileMenu();
                 });
             });
         });
