@@ -1,7 +1,7 @@
 // EMS Leadership Guide - Service Worker
 const CACHE_NAME = 'ems-leadership-v1';
 const urlsToCache = [
-  'ems-leadership-guide-enhanced.html',
+  './',
   'manifest.json'
 ];
 
